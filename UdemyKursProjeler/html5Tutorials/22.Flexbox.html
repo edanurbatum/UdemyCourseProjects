@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="icon" type="image/png" href="./images/stars.png" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column; /*sütun olarak sýrala*/
+            justify-content: space-around;
+            align-items: center; /* yatayda ortalýyoruz*/
+            
+            /*flex-direction:row olduðunda Yatayda konumlandýrma yapmak için justfy-content, dikeyde konumlandýrma yapmak için align-items kullanýyoruz
+            flex-direction:column olduðunda tam tersi*/
+            /*justify-content:space-evenly;*/ /*eþit aralýklarla böler*/
+
+            min-height: 600px; /*min height yani içerik sýðmazsa boyutu artar*/
+            background-color: black;
+        }
+
+        .box {
+            text-align: center;
+            background: #f2f2f2;
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Flex Container -->
+    <div class="container">
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="box">
+            <h1>Article 2</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <!--<div class="box">
+            <h1>Article 4</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="box">
+            <h1>Article 5</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="box">
+            <h1>Article 6</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>-->
+
+    </div>
+</body>
+</html>
